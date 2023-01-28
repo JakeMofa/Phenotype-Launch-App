@@ -14,13 +14,12 @@
 </head>
 
 <body>
-  <div class="container">
-    <img class="logo" src="" alt="logo">
-
-    <h1 class="header"> Connecting</h1>
-
-    <div class="connections">
-
+  <div class="container page-width">
+    <div class="logo">
+      <img src="images/spinny logo white 1.png" alt="logo">
+    </div>
+    <h1 class="spinny">Connections</h1>
+    <div class="connections-wrapper">
       <a href="#">
         <div class="com1 bt">
           <h2 class="com-content">UR</h2>
@@ -41,18 +40,59 @@
           <h2 class="com-content">SCREEN</h2>
         </div>
       </a>
-
     </div>
     <div class="buttons">
-      <a href="#" class="btn btn-light">
-        <div class="btn-content">Select observer <i class="uil uil-plus"></i></div></i>
-      </a>
-      <div class="launch">
-        <a href="launch.html" class="btn btn-launch">
-          <div class="btn-content"> Launch </div>
-        </a>
+      <button class="btn btn-light btn-select-observer" onClick="toggleModal()">
+        <span>SELECT OBSERVER</span>
+        <span><img src="images/select_observer_icon.svg" /></span>
+      </button>
+      <a href="launch.html" class="btn-launch">Launch</a>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-container">
+        <div class="modal-title">
+          SELECT OBSERVER
+        </div>
+        <div class="modal-option-wrapper" onClick="toggleModal()">
+          <div>
+            <span>PERSON ONE</span>
+            <span>3:21 JAN 23</span>
+          </div>
+        </div>
+        <div class="modal-option-wrapper" onClick="toggleModal()">
+          <div>
+            <span>PERSON ONE</span>
+            <span>3:21 JAN 23</span>
+          </div>
+        </div>
+        <div class="modal-option-wrapper" onClick="toggleModal()">
+          <div>
+            <span>PERSON ONE</span>
+            <span>3:21 JAN 23</span>
+          </div>
+        </div>
+        <div class="modal-option-wrapper" onClick="toggleModal()">
+          <div>
+            <span>PERSON ONE</span>
+            <span>3:21 JAN 23</span>
+          </div>
+        </div>
+        <div class="modal-option-wrapper" onClick="toggleModal()">
+          <div>
+            <span>PERSON ONE</span>
+            <span>3:21 JAN 23</span>
+          </div>
+        </div>
       </div>
     </div>
 </body>
+
+<script>
+  function toggleModal(){
+    document.getElementById("modal").classList.toggle("active");
+  };
+</script>
 
 </html>

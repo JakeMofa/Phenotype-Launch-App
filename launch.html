@@ -10,68 +10,119 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="container grid">
-      <a href=""><img class="logo" src="" alt="logo"></a>
-      <div class="vr-view">
-
+  <div class="page-width">
+    <div class="container">
+      <div class="logo">
+        <img src="images/spinny logo white 1.png" alt="logo_launch">
       </div>
-      <div class="progress-container grid">
-        <div class="progress-bar">
-          <span class="progress-percentage progress-html">
-          </span>
+      <div class="wrapper">
+        <div class="subcontainer">
+          <div class="phenotype-preview">
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar">
+              <span class="progress-percentage">
+              </span>
+            </div>
+            <div class="timer">00:00</div>
+          </div>
+          <div class="button-container mb-14">
+            <button class="button button-experience" onClick="toggleModalForExperience()">
+              <div>
+                <span>SELECT EXPERIENCE</span>
+                <span><img src="images/select_observer_icon.svg" /></span>
+              </div>
+            </button>
+            <a href="launch.html" class="button button-start">Start</a>
+          </div>
+          <div class="button-container mb-14">
+            <button class="button button-change" onClick="toggleModalForObserver()">
+              <div>
+                <span>[FIRST] [LAST]</span>
+                <span>CHANGE</span>
+              </div>
+            </button>
+            <a href="launch.html" class="button button-cancel">CANCEL</a>
+          </div>
+          <a href="running.html" class="button button-publish">PUBLISH</a>
         </div>
-        <div class="timer">
-          <div class="timer-content"> 00:00</div>
+        <div class="aside">
+          <div class="phenotype-preview">
+          </div>
+          <div class="wave-visualizer">
+          </div>
+          <div class="random-sequence">
+          </div>
         </div>
       </div>
-
-
-      <div class="button-container grid">
-        <div>
-          <a href="#" class="experience btn">
-            <div class="experience-content">Select Experience</div>
-          </a>
-        </div>
-
-        <div><a href="#" class="start btn">
-            <div class="experience-content"> start</div>
-          </a>
-        </div>
-      </div>
-      <div class="button-change grid">
-        <div>
-          <a href="#" class="change btn">
-            <div class="experience-content"><span>[first] [last]</span> change</div>
-          </a>
-        </div>
-        <div>
-          <a href="#" class="cancel btn ">
-            <div class="experience-content"> cancel</div>
-          </a>
-        </div>
-
-      </div>
-      <div class="grid"></div>
-      <a href="running.html" class="publish btn"> Publish</a>
     </div>
-    <div class="aside grid">
+  </div>
 
-      <div class="phenotype-preview">
-
+  <!-- Modal -->
+  <div id="modal-observer" class="modal">
+    <div class="modal-container">
+      <div class="modal-title">
+        SELECT OBSERVER
       </div>
-
-      <div class="wave-visualizer">
-
+      <div class="modal-option-wrapper" onClick="toggleModalForObserver()">
+        <div>
+          <span>PERSON ONE</span>
+          <span>3:21 JAN 23</span>
+        </div>
       </div>
+      <div class="modal-option-wrapper" onClick="toggleModalForObserver()">
+        <div>
+          <span>PERSON ONE</span>
+          <span>3:21 JAN 23</span>
+        </div>
+      </div>
+      <div class="modal-option-wrapper" onClick="toggleModalForObserver()">
+        <div>
+          <span>PERSON ONE</span>
+          <span>3:21 JAN 23</span>
+        </div>
+      </div>
+      <div class="modal-option-wrapper" onClick="toggleModalForObserver()">
+        <div>
+          <span>PERSON ONE</span>
+          <span>3:21 JAN 23</span>
+        </div>
+      </div>
+      <div class="modal-option-wrapper" onClick="toggleModalForObserver()">
+        <div>
+          <span>PERSON ONE</span>
+          <span>3:21 JAN 23</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
-      <div class="random-sequence">
-
-
-
+  <div id="modal-experience" class="modal">
+    <div class="modal-container">
+      <div class="modal-title bg-black">
+        SELECT EXPERIENCE
+      </div>
+      <div class="modal-title bg-gray" onClick="toggleModalForExperience()">
+        PHENOTYPING I
+      </div>
+      <div class="modal-title bg-gray" onClick="toggleModalForExperience()">
+        SELF ASSEMBLY 3D
+      </div>
+      <div class="modal-title bg-gray" onClick="toggleModalForExperience()">
+        INK BLOT
       </div>
     </div>
   </div>
 </body>
+
+<script>
+  function toggleModalForObserver(){
+    document.getElementById("modal-observer").classList.toggle("active");
+  };
+
+  function toggleModalForExperience(){
+    document.getElementById("modal-experience").classList.toggle("active");
+  };
+</script>
 
 </html>
