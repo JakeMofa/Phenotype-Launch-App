@@ -4,188 +4,345 @@ body {
   color: white;
 }
 
-.logo {
-
-  height: 78px;
-  width: 100%;
-
-}
-
-.wrapper {
-  display: grid;
-  display: flex;
-  margin: 4em;
+.mb-14 {
+  margin-bottom: 14px;
 }
 
 .container {
-  max-width: 768px;
-  margin-left: 24px;
-  margin-right: 24px;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1394px;
+  text-align: center;
 }
 
-.vr-view {
-  border: 2px solid white;
-  width: 42.4375em;
-  height: 22.125em;
-  border-radius: 57px;
+.page-width {
+  max-width: 1728px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.grid {
-  display: inline-grid;
-  gap: 1.5rem;
+.logo img {
+  height: 151px;
+  width: 151px;
+  margin-top: 20px;
+  margin-bottom: 52px;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.subcontainer{
+  max-width: 679px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 41px;
+}
+
+.aside{
+  max-width: 391px;
+  width: 35%;
+  margin-bottom: 41px;
 }
 
 .progress-container {
-  row-gap: 0;
-  grid-template-columns: 6fr 1fr;
-  display: grid;
   display: flex;
+  justify-content: space-between;
+  gap: 22px;
+  margin-bottom: 49px;
 }
 
 .progress-bar {
-  height: 30px;
   max-width: 616px;
-  border-radius: 20px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 42px;
   background-color: #D9D9D9;
 }
 
 .progress-percentage {
   display: block;
-  height: 20px;
   max-width: 616px;
-  border-radius: 20px;
+  border-radius: 42px;
   background-color: black;
+  width: 30px;
+  height: 27px;
 }
-
-.progress-html {
-  padding: 0.3em 0.2em;
-  margin: 4px;
-  width: 5%;
-}
-
 
 .timer {
   background-color: #D9D9D9;
-  height: 30px;
-  width: 50px;
   color: black;
-  border-radius: 20px;
-}
-
-.timer-content {
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+  border-radius: 42px;
   display: flex;
-  padding: 0.5em 1em;
-}
-
-.btn {
-  font-size: 1.125rem;
-  text-align: center;
-  text-decoration: none;
-  font-weight: 500;
-  display: block;
-  padding: 0.5em 1em;
-  margin-bottom: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  display: inline-block;
-}
-
-.grid {
-  display: grid;
-}
-
-.grid:after {
-  content: "";
-  display: table;
-  clear: both;
+  align-items: center;
+  justify-content: center;
+  max-width: 100px;
+  padding: 14px 21px;
+  width: 100%;
 }
 
 .button-container {
-  display: grid;
   display: flex;
-
+  justify-content: space-between;
+  align-items: center;
+  gap: 22px;
 }
 
+.button-experience {
+  background-color: #C2DBF1;
+  padding: 24px 0px;
+  border-radius: 42px;
+  border: 1px solid #000000;
+  font-family: "Proto Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 390px;
+}
 
+.button-experience div {
+  width: 100%;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  justify-content: space-between;
+}
+
+.button-experience span:last-child {
+  width: 34px;
+  height: 34px;
+}
 
 .button-change {
-  display: grid;
+  background-color: #C2DBF1;
+  padding: 27px 0;
+  border-radius: 42px;
+  border: 1px solid #000000;
+  font-family: "Proto Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  width: 100%;
+  max-width: 390px;
+}
+
+.button-change div {
+  padding: 0 48px;
   display: flex;
-}
-
-.experience {
-  background-color: #D9D9D9;
-  color: black;
-  height: 33px;
-  width: 200px;
-  border-radius: 20px;
-}
-
-.experience-content {
-  justify-content: center;
-  text-align: center;
   align-items: center;
-  display: flex;
-  padding: 0.5em 1em;
+  color: #ffffff;
+  justify-content: space-between;
 }
 
-.start {
-  background-color: #B7C3A7;
-  color: black;
-  height: 34px;
-  width: 80px;
-  border-radius: 30px;
+.button-change span:last-child {
+  color: #000000;
 }
 
-.change {
-  background-color: #B8B8B8;
-  color: black;
-  height: 34px;
-  width: 200px;
-  border-radius: 30px;
+.button-start {
+  max-width: 140px;
+  width: 100%;
+  background: #B7C4A7;
+  border-radius: 42px;
+  padding: 28px 56px;
+  color: #000000;
+  border: 1px solid #000000;
+  font-family: 'Proto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
 }
 
-.change span {
-  color: #ffff;
-}
-
-.cancel {
-  border: 1px solid #C199AF;
+.button-cancel {
+  max-width: 140px;
+  width: 100%;
+  background: #000000;
+  border-radius: 42px;
+  padding: 28px 56px;
   color: #C199AF;
-  height: 34px;
-  width: 80px;
-  border-radius: 30px;
+  border: 1px solid #C199AF;
+  font-family: 'Proto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
 }
 
-.publish {
-  border: 1px solid white;
-  color: white;
-  height: 34px;
-  width: 678px;
-  border-radius: 30px;
+.button-publish {
+  width: 100%;
+  background: #000000;
+  border-radius: 42px;
+  padding: 28px 0px;
+  color: #B7C4A7;
+  border: 1px solid #B7C4A7;
+  font-family: 'Proto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
 }
 
 .phenotype-preview {
-  border: 3px solid #C2DBF1;
-  width: 391px;
+  border: 6px solid #C2DBF1;
   height: 354px;
   border-radius: 57px;
+  margin-bottom: 41px;
 }
 
 .wave-visualizer {
-  border: 1px solid #D9D9D9;
-  width: 391px;
+  border: 1px dashed #D9D9D9;
+  width: 100%;
   height: 272px;
   border-radius: 57px;
+  margin-bottom: 14px;
 }
 
 .random-sequence {
-  border: 1px solid #D9D9D9;
+  border: 1px dashed #D9D9D9;
   border-radius: 42px;
-  width: 391px;
+  width: 100%;
   height: 83px;
+}
 
+/* Modal */
+
+.bg-black {
+  background-color: #000000;
+}
+
+.bg-gray {
+  background-color: #C5C5C5;
+}
+
+.active {
+  display: block !important;
+}
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  display: none;
+}
+
+.modal-container {
+  width: 451px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  background: #D9D9D9;
+  padding: 31px 30px 39px;
+  border-radius: 29px;
+  gap: 8px;
+}
+
+.modal-title {
+  padding: 28px 0px;
+  border: 1px solid #FFFFFF;
+  border-radius: 15px;
+  text-align: center;
+  font-family: 'Proto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.modal-option-wrapper {
+  background: #C5C5C5;
+  border: 1px solid #FFFFFF;
+  border-radius: 15px;
+  padding: 28px 0;
+}
+
+.modal-option-wrapper:hover {
+  cursor: pointer;
+}
+
+.modal-option-wrapper div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 37px;
+  font-family: 'Proto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1450px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .subcontainer {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .aside {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .button-container {
+    flex-direction: column;
+    margin-bottom: 22px;
+  }
+
+  .button {
+    max-width: 100%;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .progress-container {
+    max-width: calc(100% - 20px);
+    flex-direction: column;
+  }
+
+  .timer {
+    width: 100%;
+    max-width: calc(100% - 21px);
+  }
+}
+
+@media (max-width: 550px) {
+  .modal-container {
+    width: 75%;
+  }
 }
